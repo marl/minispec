@@ -49,7 +49,6 @@ setup(
     ],
     extras_require={
         'docs': ['numpydoc', 'sphinx!=1.3.1', 'sphinx_rtd_theme',
-                 'matplotlib >= 2.0.0',
                  'sphinxcontrib-versioning >= 2.2.1',
                  'sphinx-gallery'],
         'tests': ['matplotlib >= 2.1',
