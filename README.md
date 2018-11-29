@@ -6,7 +6,7 @@ A minimal module for computing audio spectrograms.
 [![License](https://img.shields.io/pypi/l/minispec.svg)](https://github.com/marl/minispec/blob/master/LICENSE.md)
 [![Build Status](https://travis-ci.org/marl/minispec.png?branch=master)](http://travis-ci.org/marl/minispec?branch=master)
 [![Coverage Status](https://coveralls.io/repos/marl/minispec/badge.svg?branch=master)](https://coveralls.io/r/marl/minispec?branch=master)
-[![Documentation Status](https://readthedocs.org/projects/minispec/badge/?version=latest)](http://minispec.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/minispec/badge/?version=latest)](http://minispec.readthedocs.org/en/latest/?badge=latest)
 
 This module merely strips out all of the spectrogram and Mel spectrogram implementations from [librosa](https://github.com/librosa/librosa).
 
