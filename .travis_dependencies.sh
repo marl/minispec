@@ -11,7 +11,7 @@ conda_create ()
     conda update -q conda
     conda config --add channels pypi
     conda info -a
-    deps='pip numpy scipy coverage scikit-learn!=0.19.0 matplotlib numba'
+    deps='pip numpy scipy coverage matplotlib audioread resampy'
 
     conda create -q -n $ENV_NAME "python=$TRAVIS_PYTHON_VERSION" $deps
     conda update --all
@@ -35,6 +35,8 @@ if [ ! -d "$src" ]; then
 
         conda install -c conda-forge ffmpeg
 
+        pip install pytest-faulthandler
+        pip install pytest-cov
         pip install python-coveralls
 
         source deactivate

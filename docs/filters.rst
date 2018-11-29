@@ -1,3 +1,3 @@
 .. _filters:
 
-.. automodule:: librosa.filters
+.. automodule:: minispec.filters

@@ -1,3 +1,3 @@
 .. _feature:
 
-.. automodule:: librosa.feature
+.. automodule:: minispec.feature

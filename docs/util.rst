@@ -1,3 +1,3 @@
 .. _util:
 
-.. automodule:: librosa.util
+.. automodule:: minispec.util

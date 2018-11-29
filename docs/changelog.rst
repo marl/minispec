@@ -20,15 +20,15 @@ Other changes
     - `#751`_ fixed example documentation for proper handling of phase in dB-scaling. *Vincent Lostanlen*
     - `#755`_ forward support and future-proofing for fancy indexing with ``numpy>1.15``. *Brian McFee*
 
-.. _#730: https://github.com/librosa/librosa/pull/730
-.. _#735: https://github.com/librosa/librosa/pull/735
-.. _#750: https://github.com/librosa/librosa/pull/750
-.. _#753: https://github.com/librosa/librosa/pull/753
-.. _#727: https://github.com/librosa/librosa/pull/727
-.. _#731: https://github.com/librosa/librosa/pull/731
-.. _#734: https://github.com/librosa/librosa/pull/734
-.. _#751: https://github.com/librosa/librosa/pull/751
-.. _#755: https://github.com/librosa/librosa/pull/755
+.. _#730: https://github.com/minispec/minispec/pull/730
+.. _#735: https://github.com/minispec/minispec/pull/735
+.. _#750: https://github.com/minispec/minispec/pull/750
+.. _#753: https://github.com/minispec/minispec/pull/753
+.. _#727: https://github.com/minispec/minispec/pull/727
+.. _#731: https://github.com/minispec/minispec/pull/731
+.. _#734: https://github.com/minispec/minispec/pull/734
+.. _#751: https://github.com/minispec/minispec/pull/751
+.. _#755: https://github.com/minispec/minispec/pull/755
 
 v0.6.1
 ------
@@ -65,23 +65,23 @@ API Changes and compatibility
   - `#716`_ `core.dtw` has moved to `sequence.dtw`, and `core.fill_off_diagonal` has moved to
     `util.fill_off_diagonal`.  *Brian McFee*
 
-.. _#716: https://github.com/librosa/librosa/pull/716
-.. _#714: https://github.com/librosa/librosa/pull/714
-.. _#713: https://github.com/librosa/librosa/pull/713
-.. _#710: https://github.com/librosa/librosa/pull/710
-.. _#708: https://github.com/librosa/librosa/pull/708
-.. _#707: https://github.com/librosa/librosa/pull/707
-.. _#705: https://github.com/librosa/librosa/pull/705
-.. _#704: https://github.com/librosa/librosa/pull/704
-.. _#701: https://github.com/librosa/librosa/pull/701
-.. _#699: https://github.com/librosa/librosa/pull/699
-.. _#688: https://github.com/librosa/librosa/pull/688
-.. _#687: https://github.com/librosa/librosa/pull/687
-.. _#684: https://github.com/librosa/librosa/pull/684
-.. _#682: https://github.com/librosa/librosa/pull/682
-.. _#680: https://github.com/librosa/librosa/pull/680
-.. _#679: https://github.com/librosa/librosa/pull/679
-.. _#677: https://github.com/librosa/librosa/pull/677
+.. _#716: https://github.com/minispec/minispec/pull/716
+.. _#714: https://github.com/minispec/minispec/pull/714
+.. _#713: https://github.com/minispec/minispec/pull/713
+.. _#710: https://github.com/minispec/minispec/pull/710
+.. _#708: https://github.com/minispec/minispec/pull/708
+.. _#707: https://github.com/minispec/minispec/pull/707
+.. _#705: https://github.com/minispec/minispec/pull/705
+.. _#704: https://github.com/minispec/minispec/pull/704
+.. _#701: https://github.com/minispec/minispec/pull/701
+.. _#699: https://github.com/minispec/minispec/pull/699
+.. _#688: https://github.com/minispec/minispec/pull/688
+.. _#687: https://github.com/minispec/minispec/pull/687
+.. _#684: https://github.com/minispec/minispec/pull/684
+.. _#682: https://github.com/minispec/minispec/pull/682
+.. _#680: https://github.com/minispec/minispec/pull/680
+.. _#679: https://github.com/minispec/minispec/pull/679
+.. _#677: https://github.com/minispec/minispec/pull/677
 
 v0.6.0
 ------
@@ -141,38 +141,38 @@ API changes and compatibility
     consistency with `util.valid_audio` checks elsewhere in the codebase. If you have existing
     code that requires integer-valued output, consider using `soundfile.write` instead.
 
-.. _#674: https://github.com/librosa/librosa/pull/674
-.. _#671: https://github.com/librosa/librosa/pull/671
-.. _#663: https://github.com/librosa/librosa/pull/663
-.. _#646: https://github.com/librosa/librosa/pull/646
-.. _#634: https://github.com/librosa/librosa/pull/634
-.. _#630: https://github.com/librosa/librosa/pull/630
-.. _#619: https://github.com/librosa/librosa/pull/619
-.. _#616: https://github.com/librosa/librosa/pull/616
-.. _#600: https://github.com/librosa/librosa/pull/600
-.. _#597: https://github.com/librosa/librosa/pull/597
-.. _#594: https://github.com/librosa/librosa/pull/594
-.. _#593: https://github.com/librosa/librosa/pull/593
-.. _#587: https://github.com/librosa/librosa/pull/587
-.. _#648: https://github.com/librosa/librosa/pull/648
-.. _#633: https://github.com/librosa/librosa/pull/633
-.. _#439: https://github.com/librosa/librosa/pull/439
-.. _#435: https://github.com/librosa/librosa/pull/435
-.. _#666: https://github.com/librosa/librosa/pull/666
-.. _#656: https://github.com/librosa/librosa/pull/656
-.. _#642: https://github.com/librosa/librosa/pull/642
-.. _#637: https://github.com/librosa/librosa/pull/637
-.. _#636: https://github.com/librosa/librosa/pull/636
-.. _#632: https://github.com/librosa/librosa/pull/632
-.. _#628: https://github.com/librosa/librosa/pull/628
-.. _#625: https://github.com/librosa/librosa/pull/625
-.. _#622: https://github.com/librosa/librosa/pull/622
-.. _#621: https://github.com/librosa/librosa/pull/621
-.. _#620: https://github.com/librosa/librosa/pull/620
-.. _#609: https://github.com/librosa/librosa/pull/609
-.. _#598: https://github.com/librosa/librosa/pull/598
-.. _#574: https://github.com/librosa/librosa/pull/574
-.. _#627: https://github.com/librosa/librosa/pull/627
+.. _#674: https://github.com/minispec/minispec/pull/674
+.. _#671: https://github.com/minispec/minispec/pull/671
+.. _#663: https://github.com/minispec/minispec/pull/663
+.. _#646: https://github.com/minispec/minispec/pull/646
+.. _#634: https://github.com/minispec/minispec/pull/634
+.. _#630: https://github.com/minispec/minispec/pull/630
+.. _#619: https://github.com/minispec/minispec/pull/619
+.. _#616: https://github.com/minispec/minispec/pull/616
+.. _#600: https://github.com/minispec/minispec/pull/600
+.. _#597: https://github.com/minispec/minispec/pull/597
+.. _#594: https://github.com/minispec/minispec/pull/594
+.. _#593: https://github.com/minispec/minispec/pull/593
+.. _#587: https://github.com/minispec/minispec/pull/587
+.. _#648: https://github.com/minispec/minispec/pull/648
+.. _#633: https://github.com/minispec/minispec/pull/633
+.. _#439: https://github.com/minispec/minispec/pull/439
+.. _#435: https://github.com/minispec/minispec/pull/435
+.. _#666: https://github.com/minispec/minispec/pull/666
+.. _#656: https://github.com/minispec/minispec/pull/656
+.. _#642: https://github.com/minispec/minispec/pull/642
+.. _#637: https://github.com/minispec/minispec/pull/637
+.. _#636: https://github.com/minispec/minispec/pull/636
+.. _#632: https://github.com/minispec/minispec/pull/632
+.. _#628: https://github.com/minispec/minispec/pull/628
+.. _#625: https://github.com/minispec/minispec/pull/625
+.. _#622: https://github.com/minispec/minispec/pull/622
+.. _#621: https://github.com/minispec/minispec/pull/621
+.. _#620: https://github.com/minispec/minispec/pull/620
+.. _#609: https://github.com/minispec/minispec/pull/609
+.. _#598: https://github.com/minispec/minispec/pull/598
+.. _#574: https://github.com/minispec/minispec/pull/574
+.. _#627: https://github.com/minispec/minispec/pull/627
 
 v0.5.1
 ------
@@ -201,21 +201,21 @@ Other changes
   - `#544`_ efficiency improvement in CQT. *Carl Thome*
   - `#523`_ support reading files with more than two channels. *Paul Brossier*
 
-.. _#523: https://github.com/librosa/librosa/pull/523
-.. _#544: https://github.com/librosa/librosa/pull/544
-.. _#556: https://github.com/librosa/librosa/pull/556
-.. _#558: https://github.com/librosa/librosa/pull/558
-.. _#564: https://github.com/librosa/librosa/pull/564
-.. _#551: https://github.com/librosa/librosa/pull/551
-.. _#557: https://github.com/librosa/librosa/pull/557
-.. _#559: https://github.com/librosa/librosa/pull/559
-.. _#563: https://github.com/librosa/librosa/pull/563
-.. _#565: https://github.com/librosa/librosa/pull/565
-.. _#539: https://github.com/librosa/librosa/pull/539
-.. _#553: https://github.com/librosa/librosa/pull/553
-.. _#554: https://github.com/librosa/librosa/pull/554
-.. _#555: https://github.com/librosa/librosa/pull/555
-.. _#569: https://github.com/librosa/librosa/pull/569
+.. _#523: https://github.com/minispec/minispec/pull/523
+.. _#544: https://github.com/minispec/minispec/pull/544
+.. _#556: https://github.com/minispec/minispec/pull/556
+.. _#558: https://github.com/minispec/minispec/pull/558
+.. _#564: https://github.com/minispec/minispec/pull/564
+.. _#551: https://github.com/minispec/minispec/pull/551
+.. _#557: https://github.com/minispec/minispec/pull/557
+.. _#559: https://github.com/minispec/minispec/pull/559
+.. _#563: https://github.com/minispec/minispec/pull/563
+.. _#565: https://github.com/minispec/minispec/pull/565
+.. _#539: https://github.com/minispec/minispec/pull/539
+.. _#553: https://github.com/minispec/minispec/pull/553
+.. _#554: https://github.com/minispec/minispec/pull/554
+.. _#555: https://github.com/minispec/minispec/pull/555
+.. _#569: https://github.com/minispec/minispec/pull/569
 
 v0.5.0
 ------
@@ -224,50 +224,50 @@ v0.5.0
 Bug fixes
 
   - `#371`_ preserve integer hop lengths in constant-Q transforms. *Brian McFee*
-  - `#386`_ fixed a length check in ``librosa.util.frame``. *Brian McFee*
-  - `#416`_ ``librosa.output.write_wav`` only normalizes floating point, and normalization is disabled by
+  - `#386`_ fixed a length check in ``minispec.util.frame``. *Brian McFee*
+  - `#416`_ ``minispec.output.write_wav`` only normalizes floating point, and normalization is disabled by
     default. *Brian McFee*
-  - `#417`_ ``librosa.cqt`` output is now scaled continuously across octave boundaries. *Brian McFee, Eric
+  - `#417`_ ``minispec.cqt`` output is now scaled continuously across octave boundaries. *Brian McFee, Eric
     Humphrey*
-  - `#450`_ enhanced numerical stability for ``librosa.util.softmask``. *Brian McFee*
+  - `#450`_ enhanced numerical stability for ``minispec.util.softmask``. *Brian McFee*
   - `#467`_ correction to chroma documentation. *Seth Kranzler*
   - `#501`_ fixed a numpy 1.12 compatibility error in ``pitch_tuning``. *Hojin Lee*
 
 New features
 
-  - `#323`_ ``librosa.dtw`` dynamic time warping. *Stefan Balke*
-  - `#404`_ ``librosa.cache`` now supports priority levels, analogous to logging levels. *Brian McFee*
-  - `#405`_ ``librosa.interp_harmonics`` for estimating harmonics of time-frequency representations. *Brian
+  - `#323`_ ``minispec.dtw`` dynamic time warping. *Stefan Balke*
+  - `#404`_ ``minispec.cache`` now supports priority levels, analogous to logging levels. *Brian McFee*
+  - `#405`_ ``minispec.interp_harmonics`` for estimating harmonics of time-frequency representations. *Brian
     McFee*
-  - `#410`_ ``librosa.beat.beat_track`` and ``librosa.onset.onset_detect`` can return output in frames,
+  - `#410`_ ``minispec.beat.beat_track`` and ``minispec.onset.onset_detect`` can return output in frames,
     samples, or time units. *Brian McFee*
   - `#413`_ full support for scipy-style window specifications. *Brian McFee*
-  - `#427`_ ``librosa.salience`` for computing spectrogram salience using harmonic peaks. *Rachel Bittner*
-  - `#428`_ ``librosa.effects.trim`` and ``librosa.effects.split`` for trimming and splitting waveforms. *Brian
+  - `#427`_ ``minispec.salience`` for computing spectrogram salience using harmonic peaks. *Rachel Bittner*
+  - `#428`_ ``minispec.effects.trim`` and ``minispec.effects.split`` for trimming and splitting waveforms. *Brian
     McFee*
-  - `#464`_ ``librosa.amplitude_to_db``, ``db_to_amplitude``, ``power_to_db``, and ``db_to_power`` for
+  - `#464`_ ``minispec.amplitude_to_db``, ``db_to_amplitude``, ``power_to_db``, and ``db_to_power`` for
     amplitude conversions.  This deprecates ``logamplitude``.  *Brian McFee*
-  - `#471`_ ``librosa.util.normalize`` now supports ``threshold`` and ``fill_value`` arguments. *Brian McFee*
-  - `#472`_ ``librosa.feature.melspectrogram`` now supports ``power`` argument. *Keunwoo Choi*
-  - `#473`_ ``librosa.onset.onset_backtrack`` for backtracking onset events to previous local minima of
+  - `#471`_ ``minispec.util.normalize`` now supports ``threshold`` and ``fill_value`` arguments. *Brian McFee*
+  - `#472`_ ``minispec.feature.melspectrogram`` now supports ``power`` argument. *Keunwoo Choi*
+  - `#473`_ ``minispec.onset.onset_backtrack`` for backtracking onset events to previous local minima of
     energy. *Brian McFee*
-  - `#479`_ ``librosa.beat.tempo`` replaces ``librosa.beat.estimate_tempo``, supports time-varying estimation.
+  - `#479`_ ``minispec.beat.tempo`` replaces ``minispec.beat.estimate_tempo``, supports time-varying estimation.
     *Brian McFee*
   
 
 Other changes
 
   - `#352`_ removed ``seaborn`` integration. *Brian McFee*
-  - `#368`_ rewrite of the ``librosa.display`` submodule.  All plots are now in natural coordinates. *Brian
+  - `#368`_ rewrite of the ``minispec.display`` submodule.  All plots are now in natural coordinates. *Brian
     McFee*
-  - `#402`_ ``librosa.display`` submodule is not automatically imported. *Brian McFee*
-  - `#403`_ ``librosa.decompose.hpss`` now returns soft masks. *Brian McFee*
-  - `#407`_ ``librosa.feature.rmse`` can now compute directly in the time domain. *Carl Thome*
-  - `#432`_ ``librosa.feature.rmse`` renames ``n_fft`` to ``frame_length``. *Brian McFee*
-  - `#446`_ ``librosa.cqt`` now disables tuning estimation by default. *Brian McFee*
-  - `#452`_ ``librosa.filters.__float_window`` now always uses integer length windows. *Brian McFee*
-  - `#459`_ ``librosa.load`` now supports ``res_type`` argument for resampling. *CJ Carr*
-  - `#482`_ ``librosa.filters.mel`` now warns if parameters will generate empty filter channels. *Brian McFee*
+  - `#402`_ ``minispec.display`` submodule is not automatically imported. *Brian McFee*
+  - `#403`_ ``minispec.decompose.hpss`` now returns soft masks. *Brian McFee*
+  - `#407`_ ``minispec.feature.rmse`` can now compute directly in the time domain. *Carl Thome*
+  - `#432`_ ``minispec.feature.rmse`` renames ``n_fft`` to ``frame_length``. *Brian McFee*
+  - `#446`_ ``minispec.cqt`` now disables tuning estimation by default. *Brian McFee*
+  - `#452`_ ``minispec.filters.__float_window`` now always uses integer length windows. *Brian McFee*
+  - `#459`_ ``minispec.load`` now supports ``res_type`` argument for resampling. *CJ Carr*
+  - `#482`_ ``minispec.filters.mel`` now warns if parameters will generate empty filter channels. *Brian McFee*
   - `#480`_ expanded documentation for advanced IO use-cases. *Fabian Robert-Stoeter*
 
 API changes and compatibility
@@ -290,8 +290,8 @@ API changes and compatibility
         - ``util.SMALL_FLOAT``
 
   - The following parameters have been removed:
-        - ``librosa.cqt``: `resolution`
-        - ``librosa.cqt``: `aggregate`
+        - ``minispec.cqt``: `resolution`
+        - ``minispec.cqt``: `aggregate`
         - ``feature.chroma_cqt``: `mode`
         - ``onset_strength``: `centering`
 
@@ -299,14 +299,14 @@ API changes and compatibility
         - The `use_sns` argument has been removed from `display.cmap`
         - `magma` is now the default sequential colormap.
 
-  - The ``librosa.display`` module has been rewritten.
-        - ``librosa.display.specshow`` now plots using `pcolormesh`, and supports non-uniform time and frequency axes.
+  - The ``minispec.display`` module has been rewritten.
+        - ``minispec.display.specshow`` now plots using `pcolormesh`, and supports non-uniform time and frequency axes.
         - All plots can be rendered in natural coordinates (e.g., time or Hz)
         - Interactive plotting is now supported via ticker and formatter objects
 
-  - ``librosa.decompose.hpss`` with `mask=True` now returns soft masks, rather than binary masks.
+  - ``minispec.decompose.hpss`` with `mask=True` now returns soft masks, rather than binary masks.
 
-  - ``librosa.filters.get_window`` wraps ``scipy.signal.get_window``, and handles generic callables as well pre-registered
+  - ``minispec.filters.get_window`` wraps ``scipy.signal.get_window``, and handles generic callables as well pre-registered
     window functions.  All windowed analyses (e.g., ``stft``, ``cqt``, or ``tempogram``) now support the full range
     of window functions and parameteric windows via tuple parameters, e.g., ``window=('kaiser', 4.0)``.
         
@@ -316,42 +316,42 @@ API changes and compatibility
     backwards compatibility with the 0.4 series.
 
   - ``cqt`` now uses `tuning=0.0` by default, rather than estimating the tuning from the signal.  Tuning
-    estimation is still supported, and enabled by default for chroma analysis (``librosa.feature.chroma_cqt``).
+    estimation is still supported, and enabled by default for chroma analysis (``minispec.feature.chroma_cqt``).
 
   - ``logamplitude`` is deprecated in favor of ``amplitude_to_db`` or ``power_to_db``.  The `ref_power` parameter
     has been renamed to `ref`.
 
 
-.. _#501: https://github.com/librosa/librosa/pull/501
-.. _#480: https://github.com/librosa/librosa/pull/480
-.. _#467: https://github.com/librosa/librosa/pull/467
-.. _#450: https://github.com/librosa/librosa/pull/450
-.. _#417: https://github.com/librosa/librosa/pull/417
-.. _#416: https://github.com/librosa/librosa/pull/416
-.. _#386: https://github.com/librosa/librosa/pull/386
-.. _#371: https://github.com/librosa/librosa/pull/371
-.. _#479: https://github.com/librosa/librosa/pull/479
-.. _#473: https://github.com/librosa/librosa/pull/473
-.. _#472: https://github.com/librosa/librosa/pull/472
-.. _#471: https://github.com/librosa/librosa/pull/471
-.. _#464: https://github.com/librosa/librosa/pull/464
-.. _#428: https://github.com/librosa/librosa/pull/428
-.. _#427: https://github.com/librosa/librosa/pull/427
-.. _#413: https://github.com/librosa/librosa/pull/413
-.. _#410: https://github.com/librosa/librosa/pull/410
-.. _#405: https://github.com/librosa/librosa/pull/405
-.. _#404: https://github.com/librosa/librosa/pull/404
-.. _#323: https://github.com/librosa/librosa/pull/323
-.. _#482: https://github.com/librosa/librosa/pull/482
-.. _#459: https://github.com/librosa/librosa/pull/459
-.. _#452: https://github.com/librosa/librosa/pull/452
-.. _#446: https://github.com/librosa/librosa/pull/446
-.. _#432: https://github.com/librosa/librosa/pull/432
-.. _#407: https://github.com/librosa/librosa/pull/407
-.. _#403: https://github.com/librosa/librosa/pull/403
-.. _#402: https://github.com/librosa/librosa/pull/402
-.. _#368: https://github.com/librosa/librosa/pull/368
-.. _#352: https://github.com/librosa/librosa/pull/352
+.. _#501: https://github.com/minispec/minispec/pull/501
+.. _#480: https://github.com/minispec/minispec/pull/480
+.. _#467: https://github.com/minispec/minispec/pull/467
+.. _#450: https://github.com/minispec/minispec/pull/450
+.. _#417: https://github.com/minispec/minispec/pull/417
+.. _#416: https://github.com/minispec/minispec/pull/416
+.. _#386: https://github.com/minispec/minispec/pull/386
+.. _#371: https://github.com/minispec/minispec/pull/371
+.. _#479: https://github.com/minispec/minispec/pull/479
+.. _#473: https://github.com/minispec/minispec/pull/473
+.. _#472: https://github.com/minispec/minispec/pull/472
+.. _#471: https://github.com/minispec/minispec/pull/471
+.. _#464: https://github.com/minispec/minispec/pull/464
+.. _#428: https://github.com/minispec/minispec/pull/428
+.. _#427: https://github.com/minispec/minispec/pull/427
+.. _#413: https://github.com/minispec/minispec/pull/413
+.. _#410: https://github.com/minispec/minispec/pull/410
+.. _#405: https://github.com/minispec/minispec/pull/405
+.. _#404: https://github.com/minispec/minispec/pull/404
+.. _#323: https://github.com/minispec/minispec/pull/323
+.. _#482: https://github.com/minispec/minispec/pull/482
+.. _#459: https://github.com/minispec/minispec/pull/459
+.. _#452: https://github.com/minispec/minispec/pull/452
+.. _#446: https://github.com/minispec/minispec/pull/446
+.. _#432: https://github.com/minispec/minispec/pull/432
+.. _#407: https://github.com/minispec/minispec/pull/407
+.. _#403: https://github.com/minispec/minispec/pull/403
+.. _#402: https://github.com/minispec/minispec/pull/402
+.. _#368: https://github.com/minispec/minispec/pull/368
+.. _#352: https://github.com/minispec/minispec/pull/352
 
 
 
@@ -361,44 +361,44 @@ v0.4.3
 
 Bug fixes
   - `#315`_ fixed a positioning error in ``display.specshow`` with logarithmic axes. *Brian McFee*
-  - `#332`_ ``librosa.cqt`` now throws an exception if the signal is too short for analysis. *Brian McFee*
-  - `#341`_ ``librosa.hybrid_cqt`` properly matches the scale of ``librosa.cqt``. *Brian McFee*
-  - `#348`_ ``librosa.cqt`` fixed a bug introduced in v0.4.2. *Brian McFee*
-  - `#354`_ Fixed a minor off-by-one error in ``librosa.beat.estimate_tempo``. *Brian McFee*
-  - `#357`_ improved numerical stability of ``librosa.decompose.hpss``. *Brian McFee*
+  - `#332`_ ``minispec.cqt`` now throws an exception if the signal is too short for analysis. *Brian McFee*
+  - `#341`_ ``minispec.hybrid_cqt`` properly matches the scale of ``minispec.cqt``. *Brian McFee*
+  - `#348`_ ``minispec.cqt`` fixed a bug introduced in v0.4.2. *Brian McFee*
+  - `#354`_ Fixed a minor off-by-one error in ``minispec.beat.estimate_tempo``. *Brian McFee*
+  - `#357`_ improved numerical stability of ``minispec.decompose.hpss``. *Brian McFee*
 
 New features
-  - `#312`_ ``librosa.segment.recurrence_matrix`` can now construct sparse self-similarity matrices. *Brian
+  - `#312`_ ``minispec.segment.recurrence_matrix`` can now construct sparse self-similarity matrices. *Brian
     McFee*
-  - `#337`_ ``librosa.segment.recurrence_matrix`` can now produce weighted affinities and distances. *Brian
+  - `#337`_ ``minispec.segment.recurrence_matrix`` can now produce weighted affinities and distances. *Brian
     McFee*
-  - `#311`_ ``librosa.decompose.nl_filter`` implements several self-similarity based filtering operations
+  - `#311`_ ``minispec.decompose.nl_filter`` implements several self-similarity based filtering operations
     including non-local means. *Brian McFee*
-  - `#320`_ ``librosa.feature.chroma_cens`` implements chroma energy normalized statistics (CENS) features.
+  - `#320`_ ``minispec.feature.chroma_cens`` implements chroma energy normalized statistics (CENS) features.
     *Stefan Balke*
-  - `#354`_ ``librosa.core.tempo_frequencies`` computes tempo (BPM) frequencies for autocorrelation and
+  - `#354`_ ``minispec.core.tempo_frequencies`` computes tempo (BPM) frequencies for autocorrelation and
     tempogram features. *Brian McFee*
-  - `#355`_ ``librosa.decompose.hpss`` now supports harmonic-percussive-residual separation. *CJ Carr, Brian McFee*
-  - `#357`_ ``librosa.util.softmask`` computes numerically stable soft masks. *Brian McFee*
+  - `#355`_ ``minispec.decompose.hpss`` now supports harmonic-percussive-residual separation. *CJ Carr, Brian McFee*
+  - `#357`_ ``minispec.util.softmask`` computes numerically stable soft masks. *Brian McFee*
 
 Other changes
-  - ``librosa.cqt``, ``librosa.hybrid_cqt`` parameter `aggregate` is now deprecated.
+  - ``minispec.cqt``, ``minispec.hybrid_cqt`` parameter `aggregate` is now deprecated.
   - Resampling is now handled by the ``resampy`` library
-  - ``librosa.get_duration`` can now operate directly on filenames as well as audio buffers and feature
+  - ``minispec.get_duration`` can now operate directly on filenames as well as audio buffers and feature
     matrices.
-  - ``librosa.decompose.hpss`` no longer supports ``power=0``.
+  - ``minispec.decompose.hpss`` no longer supports ``power=0``.
 
-.. _#315: https://github.com/librosa/librosa/pull/315
-.. _#332: https://github.com/librosa/librosa/pull/332
-.. _#341: https://github.com/librosa/librosa/pull/341
-.. _#348: https://github.com/librosa/librosa/pull/348
-.. _#312: https://github.com/librosa/librosa/pull/312
-.. _#337: https://github.com/librosa/librosa/pull/337
-.. _#311: https://github.com/librosa/librosa/pull/311
-.. _#320: https://github.com/librosa/librosa/pull/320
-.. _#354: https://github.com/librosa/librosa/pull/354
-.. _#355: https://github.com/librosa/librosa/pull/355
-.. _#357: https://github.com/librosa/librosa/pull/357
+.. _#315: https://github.com/minispec/minispec/pull/315
+.. _#332: https://github.com/minispec/minispec/pull/332
+.. _#341: https://github.com/minispec/minispec/pull/341
+.. _#348: https://github.com/minispec/minispec/pull/348
+.. _#312: https://github.com/minispec/minispec/pull/312
+.. _#337: https://github.com/minispec/minispec/pull/337
+.. _#311: https://github.com/minispec/minispec/pull/311
+.. _#320: https://github.com/minispec/minispec/pull/320
+.. _#354: https://github.com/minispec/minispec/pull/354
+.. _#355: https://github.com/minispec/minispec/pull/355
+.. _#357: https://github.com/minispec/minispec/pull/357
 
 v0.4.2
 ------
@@ -406,13 +406,13 @@ v0.4.2
 
 Bug fixes
   - Support for matplotlib 1.5 color properties in the ``display`` module
-  - `#308`_ Fixed a per-octave scaling error in ``librosa.cqt``. *Brian McFee*
+  - `#308`_ Fixed a per-octave scaling error in ``minispec.cqt``. *Brian McFee*
 
 New features
-  - `#279`_ ``librosa.cqt`` now provides complex-valued output with argument `real=False`.
+  - `#279`_ ``minispec.cqt`` now provides complex-valued output with argument `real=False`.
     This will become the default behavior in subsequent releases.
   - `#288`_ ``core.resample`` now supports multi-channel inputs. *Brian McFee*
-  - `#295`_ ``librosa.display.frequency_ticks``: like ``time_ticks``. Ticks can now dynamically
+  - `#295`_ ``minispec.display.frequency_ticks``: like ``time_ticks``. Ticks can now dynamically
     adapt to scale (mHz, Hz, KHz, MHz, GHz) and use automatic precision formatting (``%g``). *Brian McFee*
 
 
@@ -421,19 +421,19 @@ Other changes
   - `#294`_ deprecated the ``FeatureExtractor`` object. *Brian McFee*
   - `#300`_ added dependency version requirements to install script. *Brian McFee*
   - `#302`_, `#279`_ renamed the following parameters
-      - ``librosa.display.time_ticks``: `fmt` is now `time_fmt`
-      - ``librosa.feature.chroma_cqt``: `mode` is now `cqt_mode`
-      - ``librosa.cqt``, ``hybrid_cqt``, ``pseudo_cqt``, ``librosa.filters.constant_q``: `resolution` is now `filter_scale`
-  - `#308`_ ``librosa.cqt`` default `filter_scale` parameter is now 1 instead of 2.
+      - ``minispec.display.time_ticks``: `fmt` is now `time_fmt`
+      - ``minispec.feature.chroma_cqt``: `mode` is now `cqt_mode`
+      - ``minispec.cqt``, ``hybrid_cqt``, ``pseudo_cqt``, ``minispec.filters.constant_q``: `resolution` is now `filter_scale`
+  - `#308`_ ``minispec.cqt`` default `filter_scale` parameter is now 1 instead of 2.
 
-.. _#277: https://github.com/librosa/librosa/pull/277
-.. _#279: https://github.com/librosa/librosa/pull/279
-.. _#288: https://github.com/librosa/librosa/pull/288
-.. _#294: https://github.com/librosa/librosa/pull/294
-.. _#295: https://github.com/librosa/librosa/pull/295
-.. _#300: https://github.com/librosa/librosa/pull/300
-.. _#302: https://github.com/librosa/librosa/pull/302
-.. _#308: https://github.com/librosa/librosa/pull/308
+.. _#277: https://github.com/minispec/minispec/pull/277
+.. _#279: https://github.com/minispec/minispec/pull/279
+.. _#288: https://github.com/minispec/minispec/pull/288
+.. _#294: https://github.com/minispec/minispec/pull/294
+.. _#295: https://github.com/minispec/minispec/pull/295
+.. _#300: https://github.com/minispec/minispec/pull/300
+.. _#302: https://github.com/minispec/minispec/pull/302
+.. _#308: https://github.com/minispec/minispec/pull/308
 
 v0.4.1
 ------
@@ -443,15 +443,15 @@ Bug fixes
   - Improved safety check in CQT for invalid hop lengths
   - Fixed division by zero bug in ``core.pitch.pip_track``
   - Fixed integer-type error in ``util.pad_center`` on numpy v1.10
-  - Fixed a context scoping error in ``librosa.load`` with some audioread backends
-  - ``librosa.autocorrelate`` now persists type for complex input
+  - Fixed a context scoping error in ``minispec.load`` with some audioread backends
+  - ``minispec.autocorrelate`` now persists type for complex input
 
 New features
-  - ``librosa.clicks`` sonifies timed events such as beats or onsets
-  - ``librosa.onset.onset_strength_multi`` computes onset strength within multiple sub-bands
-  - ``librosa.feature.tempogram`` computes localized onset strength autocorrelation
-  - ``librosa.display.specshow`` now supports ``*_axis='tempo'`` for annotating tempo-scaled data
-  - ``librosa.fmt`` implements the Fast Mellin Transform
+  - ``minispec.clicks`` sonifies timed events such as beats or onsets
+  - ``minispec.onset.onset_strength_multi`` computes onset strength within multiple sub-bands
+  - ``minispec.feature.tempogram`` computes localized onset strength autocorrelation
+  - ``minispec.display.specshow`` now supports ``*_axis='tempo'`` for annotating tempo-scaled data
+  - ``minispec.fmt`` implements the Fast Mellin Transform
 
 Other changes
 
@@ -459,11 +459,11 @@ Other changes
   - ``decompose.deompose()`` now supports pre-trained transformation objects
   - Nullified side-effects of optional seaborn dependency
   - Moved ``feature.sync`` to ``util.sync`` and expanded its functionality
-  - ``librosa.onset.onset_strength`` and ``onset_strength_multi`` support superflux-style lag and max-filtering
-  - ``librosa.core.autocorrelate`` can now operate along any axis of multi-dimensional input
+  - ``minispec.onset.onset_strength`` and ``onset_strength_multi`` support superflux-style lag and max-filtering
+  - ``minispec.core.autocorrelate`` can now operate along any axis of multi-dimensional input
   - the ``segment`` module functions now support arbitrary target axis
-  - Added proper window normalization to ``librosa.core.istft`` for better reconstruction 
-    (`PR #235 <https://github.com/librosa/librosa/pull/235>`_).
+  - Added proper window normalization to ``minispec.core.istft`` for better reconstruction
+    (`PR #235 <https://github.com/minispec/minispec/pull/235>`_).
   - Standardized ``n_fft=2048`` for ``piptrack``, ``ifptrack`` (deprecated), and
     ``logfsgram`` (deprecated)
   - ``onset_strength`` parameter ``'centering'`` has been deprecated and renamed to
@@ -528,7 +528,7 @@ New features
 -  improved numerical stability in ``normalize()``
 -  audio validation checks
 -  ``to_mono()``
--  ``librosa.cache`` for storing pre-computed features
+-  ``minispec.cache`` for storing pre-computed features
 -  Stereo output support in ``write_wav``
 -  Added new feature extraction functions:
 
@@ -556,7 +556,7 @@ Other changes
 -  ``pad_center`` supports multi-dimensional input and ``axis``
    parameter
 - switched from ``np.fft`` to ``scipy.fftpack`` for FFT operations
-- changed all librosa-generated exception to a new class librosa.ParameterError
+- changed all minispec-generated exception to a new class minispec.ParameterError
 
 Deprecated functions
 
@@ -572,22 +572,22 @@ v0.3.1
 
 Bug fixes
 
--  Fixed bug #117: ``librosa.segment.agglomerative`` now returns a
+-  Fixed bug #117: ``minispec.segment.agglomerative`` now returns a
    numpy.ndarray instead of a list
--  Fixed bug #115: off-by-one error in ``librosa.core.load`` with fixed
+-  Fixed bug #115: off-by-one error in ``minispec.core.load`` with fixed
    duration
--  Fixed numerical underflow errors in ``librosa.decompose.hpss``
--  Fixed bug #104: ``librosa.decompose.hpss`` failed with silent,
+-  Fixed numerical underflow errors in ``minispec.decompose.hpss``
+-  Fixed bug #104: ``minispec.decompose.hpss`` failed with silent,
    complex-valued input
--  Fixed bug #103: ``librosa.feature.estimate_tuning`` fails when no
+-  Fixed bug #103: ``minispec.feature.estimate_tuning`` fails when no
    bins exceed the threshold
 
 Features
 
--  New function ``librosa.core.get_duration()`` computes the duration of
+-  New function ``minispec.core.get_duration()`` computes the duration of
    an audio signal
    or spectrogram-like input matrix
--  ``librosa.util.pad_center`` now accepts multi-dimensional input
+-  ``minispec.util.pad_center`` now accepts multi-dimensional input
 
 Other changes
 
@@ -608,51 +608,51 @@ v0.3.0
 Bug fixes
 
 -  Fixed numpy array indices to force integer values
--  ``librosa.util.frame`` now warns if the input data is non-contiguous
--  Fixed a formatting error in ``librosa.display.time_ticks()``
+-  ``minispec.util.frame`` now warns if the input data is non-contiguous
+-  Fixed a formatting error in ``minispec.display.time_ticks()``
 -  Added a warning if ``scikits.samplerate`` is not detected
 
 Features
 
--  New module ``librosa.chord`` for training chord recognition models
--  Parabolic interpolation piptracking ``librosa.feature.piptrack()``
--  ``librosa.localmax()`` now supports multi-dimensional slicing
+-  New module ``minispec.chord`` for training chord recognition models
+-  Parabolic interpolation piptracking ``minispec.feature.piptrack()``
+-  ``minispec.localmax()`` now supports multi-dimensional slicing
 -  New example scripts
 -  Improved documentation
--  Added the ``librosa.util.FeatureExtractor`` class, which allows
-   librosa functions
+-  Added the ``minispec.util.FeatureExtractor`` class, which allows
+   minispec functions
    to act as feature extraction stages in ``sklearn``
--  New module ``librosa.effects`` for time-domain audio processing
--  Added demo notebooks for the ``librosa.effects`` and
-   ``librosa.util.FeatureExtractor``
+-  New module ``minispec.effects`` for time-domain audio processing
+-  Added demo notebooks for the ``minispec.effects`` and
+   ``minispec.util.FeatureExtractor``
 -  Added a full-track audio example,
-   ``librosa.util.example_audio_file()``
+   ``minispec.util.example_audio_file()``
 -  Added peak-frequency sorting of basis elements in
-   ``librosa.decompose.decompose()``
+   ``minispec.decompose.decompose()``
 
 Other changes
 
 -  Spectrogram frames are now centered, rather than left-aligned. This
    removes the
-   need for window correction in ``librosa.frames_to_time()``
--  Accelerated constant-Q transform ``librosa.cqt()``
+   need for window correction in ``minispec.frames_to_time()``
+-  Accelerated constant-Q transform ``minispec.cqt()``
 -  PEP8 compliance
--  Removed normalization from ``librosa.feature.logfsgram()``
+-  Removed normalization from ``minispec.feature.logfsgram()``
 -  Efficiency improvements by ensuring memory contiguity
--  ``librosa.logamplitude()`` now supports functional reference power,
+-  ``minispec.logamplitude()`` now supports functional reference power,
    in addition
    to scalar values
--  Improved ``librosa.feature.delta()``
--  Additional padding options to ``librosa.feature.stack_memory()``
--  ``librosa.cqt`` and ``librosa.feature.logfsgram`` now use the same
+-  Improved ``minispec.feature.delta()``
+-  Additional padding options to ``minispec.feature.stack_memory()``
+-  ``minispec.cqt`` and ``minispec.feature.logfsgram`` now use the same
    parameter
    formats ``(fmin, n_bins, bins_per_octave)``.
 -  Updated demo notebook(s) to IPython 2.0
--  Moved ``perceptual_weighting()`` from ``librosa.feature`` into
-   ``librosa.core``
--  Moved ``stack_memory()`` from ``librosa.segment`` into
-   ``librosa.feature``
--  Standardized ``librosa.output.annotation`` input format to match
+-  Moved ``perceptual_weighting()`` from ``minispec.feature`` into
+   ``minispec.core``
+-  Moved ``stack_memory()`` from ``minispec.segment`` into
+   ``minispec.feature``
+-  Standardized ``minispec.output.annotation`` input format to match
    ``mir_eval``
 -  Standardized variable names (e.g., ``onset_envelope``).
 
@@ -662,40 +662,40 @@ v0.2.1
 
 Bug fixes
 
--  fixed an off-by-one error in ``librosa.onset.onset_strength()``
--  fixed a sign-flip error in ``librosa.output.write_wav()``
+-  fixed an off-by-one error in ``minispec.onset.onset_strength()``
+-  fixed a sign-flip error in ``minispec.output.write_wav()``
 -  removed all mutable object default parameters
 
 Features
 
--  added option ``centering`` to ``librosa.onset.onset_strength()`` to
+-  added option ``centering`` to ``minispec.onset.onset_strength()`` to
    resolve frame-centering issues with sliding window STFT
--  added frame-center correction to ``librosa.core.frames_to_time()``
-   and ``librosa.core.time_to_frames()``
--  added ``librosa.util.pad_center()``
--  added ``librosa.output.annotation()``
--  added ``librosa.output.times_csv()``
--  accelerated ``librosa.core.stft()`` and ``ifgram()``
--  added ``librosa.util.frame`` for in-place signal framing
--  ``librosa.beat.beat_track`` now supports user-supplied tempo
--  added ``librosa.util.normalize()``
--  added ``librosa.util.find_files()``
--  added ``librosa.util.axis_sort()``
--  new module: ``librosa.util()``
--  ``librosa.filters.constant_q`` now support padding
--  added boolean input support for ``librosa.display.cmap()``
--  speedup in ``librosa.core.cqt()``
+-  added frame-center correction to ``minispec.core.frames_to_time()``
+   and ``minispec.core.time_to_frames()``
+-  added ``minispec.util.pad_center()``
+-  added ``minispec.output.annotation()``
+-  added ``minispec.output.times_csv()``
+-  accelerated ``minispec.core.stft()`` and ``ifgram()``
+-  added ``minispec.util.frame`` for in-place signal framing
+-  ``minispec.beat.beat_track`` now supports user-supplied tempo
+-  added ``minispec.util.normalize()``
+-  added ``minispec.util.find_files()``
+-  added ``minispec.util.axis_sort()``
+-  new module: ``minispec.util()``
+-  ``minispec.filters.constant_q`` now support padding
+-  added boolean input support for ``minispec.display.cmap()``
+-  speedup in ``minispec.core.cqt()``
 
 Other changes
 
--  optimized default parameters for ``librosa.onset.onset_detect``
--  set ``librosa.filters.mel`` parameter ``n_mels=128`` by default
--  ``librosa.feature.chromagram()`` and ``logfsgram()`` now use power
+-  optimized default parameters for ``minispec.onset.onset_detect``
+-  set ``minispec.filters.mel`` parameter ``n_mels=128`` by default
+-  ``minispec.feature.chromagram()`` and ``logfsgram()`` now use power
    instead of energy
--  ``librosa.display.specshow()`` with ``y_axis='chroma'`` now labels as
+-  ``minispec.display.specshow()`` with ``y_axis='chroma'`` now labels as
    ``pitch class``
--  set ``librosa.core.cqt`` parameter ``resolution=2`` by default
--  set ``librosa.feature.chromagram`` parameter ``octwidth=2`` by
+-  set ``minispec.core.cqt`` parameter ``resolution=2`` by default
+-  set ``minispec.feature.chromagram`` parameter ``octwidth=2`` by
    default
 
 v0.2.0
@@ -704,77 +704,77 @@ v0.2.0
 
 Bug fixes
 
--  fixed default ``librosa.core.stft, istft, ifgram`` to match
+-  fixed default ``minispec.core.stft, istft, ifgram`` to match
    specification
 -  fixed a float->int bug in peak\_pick
 -  better memory efficiency
--  ``librosa.segment.recurrence_matrix`` corrects for width suppression
+-  ``minispec.segment.recurrence_matrix`` corrects for width suppression
 -  fixed a divide-by-0 error in the beat tracker
 -  fixed a bug in tempo estimation with short windows
--  ``librosa.feature.sync`` now supports 1d arrays
+-  ``minispec.feature.sync`` now supports 1d arrays
 -  fixed a bug in beat trimming
--  fixed a bug in ``librosa.core.stft`` when calculating window size
--  fixed ``librosa.core.resample`` to support stereo signals
+-  fixed a bug in ``minispec.core.stft`` when calculating window size
+-  fixed ``minispec.core.resample`` to support stereo signals
 
 Features
 
 -  added filters option to cqt
 -  added window function support to istft
 -  added an IPython notebook demo
--  added ``librosa.features.delta`` for computing temporal difference
+-  added ``minispec.features.delta`` for computing temporal difference
    features
 -  new ``examples`` scripts: tuning, hpss
--  added optional trimming to ``librosa.segment.stack_memory``
--  ``librosa.onset.onset_strength`` now takes generic spectrogram
+-  added optional trimming to ``minispec.segment.stack_memory``
+-  ``minispec.onset.onset_strength`` now takes generic spectrogram
    function ``feature``
--  compute reference power directly in ``librosa.core.logamplitude``
--  color-blind-friendly default color maps in ``librosa.display.cmap``
--  ``librosa.core.onset_strength`` now accepts an aggregator
--  added ``librosa.feature.perceptual_weighting``
--  added tuning estimation to ``librosa.feature.chromagram``
--  added ``librosa.core.A_weighting``
+-  compute reference power directly in ``minispec.core.logamplitude``
+-  color-blind-friendly default color maps in ``minispec.display.cmap``
+-  ``minispec.core.onset_strength`` now accepts an aggregator
+-  added ``minispec.feature.perceptual_weighting``
+-  added tuning estimation to ``minispec.feature.chromagram``
+-  added ``minispec.core.A_weighting``
 -  vectorized frequency converters
--  added ``librosa.core.cqt_frequencies`` to get CQT frequencies
--  ``librosa.core.cqt`` basic constant-Q transform implementation
--  ``librosa.filters.cq_to_chroma`` to convert log-frequency to chroma
--  added ``librosa.core.fft_frequencies``
--  ``librosa.decompose.hpss`` can now return masking matrices
--  added reversal for ``librosa.segment.structure_feature``
--  added ``librosa.core.time_to_frames``
--  added cent notation to ``librosa.core.midi_to_note``
+-  added ``minispec.core.cqt_frequencies`` to get CQT frequencies
+-  ``minispec.core.cqt`` basic constant-Q transform implementation
+-  ``minispec.filters.cq_to_chroma`` to convert log-frequency to chroma
+-  added ``minispec.core.fft_frequencies``
+-  ``minispec.decompose.hpss`` can now return masking matrices
+-  added reversal for ``minispec.segment.structure_feature``
+-  added ``minispec.core.time_to_frames``
+-  added cent notation to ``minispec.core.midi_to_note``
 -  added time-series or spectrogram input options to ``chromagram``,
    ``logfsgram``, ``melspectrogram``, and ``mfcc``
--  new module: ``librosa.display``
--  ``librosa.output.segment_csv`` => ``librosa.output.frames_csv``
--  migrated frequency converters to ``librosa.core``
--  new module: ``librosa.filters``
--  ``librosa.decompose.hpss`` now supports complex-valued STFT matrices
--  ``librosa.decompose.decompose()`` supports ``sklearn`` decomposition
+-  new module: ``minispec.display``
+-  ``minispec.output.segment_csv`` => ``minispec.output.frames_csv``
+-  migrated frequency converters to ``minispec.core``
+-  new module: ``minispec.filters``
+-  ``minispec.decompose.hpss`` now supports complex-valued STFT matrices
+-  ``minispec.decompose.decompose()`` supports ``sklearn`` decomposition
    objects
--  added ``librosa.core.phase_vocoder``
--  new module: ``librosa.onset``; migrated onset strength from
-   ``librosa.beat``
--  added ``librosa.core.pick_peaks``
--  ``librosa.core.load()`` supports offset and duration parameters
--  ``librosa.core.magphase()`` to separate magnitude and phase from a
+-  added ``minispec.core.phase_vocoder``
+-  new module: ``minispec.onset``; migrated onset strength from
+   ``minispec.beat``
+-  added ``minispec.core.pick_peaks``
+-  ``minispec.core.load()`` supports offset and duration parameters
+-  ``minispec.core.magphase()`` to separate magnitude and phase from a
    complex matrix
--  new module: ``librosa.segment``
+-  new module: ``minispec.segment``
 
 Other changes
 
 -  ``onset_estimate_bpm => estimate_tempo``
--  removed ``n_fft`` from ``librosa.core.istft()``
--  ``librosa.core.mel_frequencies`` returns ``n_mels`` values by default
--  changed default ``librosa.decompose.hpss`` window to 31
+-  removed ``n_fft`` from ``minispec.core.istft()``
+-  ``minispec.core.mel_frequencies`` returns ``n_mels`` values by default
+-  changed default ``minispec.decompose.hpss`` window to 31
 -  disabled onset de-trending by default in
-   ``librosa.onset.onset_strength``
--  added complex-value warning to ``librosa.display.specshow``
--  broke compatibilty with ``ifgram.m``; ``librosa.core.ifgram`` now
+   ``minispec.onset.onset_strength``
+-  added complex-value warning to ``minispec.display.specshow``
+-  broke compatibilty with ``ifgram.m``; ``minispec.core.ifgram`` now
    matches ``stft``
 -  changed default beat tracker settings
--  migrated ``hpss`` into ``librosa.decompose``
--  changed default ``librosa.decompose.hpss`` power parameter to ``2.0``
--  ``librosa.core.load()`` now returns single-precision by default
+-  migrated ``hpss`` into ``minispec.decompose``
+-  changed default ``minispec.decompose.hpss`` power parameter to ``2.0``
+-  ``minispec.core.load()`` now returns single-precision by default
 -  standardized ``n_fft=2048``, ``hop_length=512`` for most functions
 -  refactored tempo estimator
 

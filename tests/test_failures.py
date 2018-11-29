@@ -5,73 +5,73 @@
 # Disable cache
 import os
 try:
-    os.environ.pop('LIBROSA_CACHE_DIR')
+    os.environ.pop('minispec_CACHE_DIR')
 except:
     pass
 
 import numpy as np
-import librosa
+import minispec
 import pytest
 
 
-@pytest.mark.xfail(raises=librosa.ParameterError)
+@pytest.mark.xfail(raises=minispec.ParameterError)
 def test_mono_valid_stereo():
     '''valid_audio: mono=True,  y.ndim==2'''
     y = np.zeros((2, 1000))
-    librosa.util.valid_audio(y, mono=True)
+    minispec.util.valid_audio(y, mono=True)
 
 
-@pytest.mark.xfail(raises=librosa.ParameterError)
+@pytest.mark.xfail(raises=minispec.ParameterError)
 def test_valid_audio_int():
     y = np.zeros(10, dtype=np.int)
-    librosa.util.valid_audio(y)
+    minispec.util.valid_audio(y)
 
 
-@pytest.mark.xfail(raises=librosa.ParameterError)
+@pytest.mark.xfail(raises=minispec.ParameterError)
 def test_valid_audio_scalar():
     y = np.array(0.0)
-    librosa.util.valid_audio(y)
+    minispec.util.valid_audio(y)
 
 
 def test_valid_stereo_or_mono():
     '''valid_audio: mono=False, y.ndim==1'''
     y = np.zeros(1000)
-    librosa.util.valid_audio(y, mono=False)
+    minispec.util.valid_audio(y, mono=False)
 
 
 def test_valid_mono():
     '''valid_audio: mono=True,  y.ndim==1'''
     y = np.zeros(1000)
-    librosa.util.valid_audio(y, mono=True)
+    minispec.util.valid_audio(y, mono=True)
 
 
 def test_valid_stereo():
     '''valid_audio: mono=False, y.ndim==2'''
     y = np.zeros((2, 1000))
-    librosa.util.valid_audio(y, mono=False)
+    minispec.util.valid_audio(y, mono=False)
 
 
-@pytest.mark.xfail(raises=librosa.ParameterError)
+@pytest.mark.xfail(raises=minispec.ParameterError)
 def test_valid_audio_type():
     '''valid_audio: list input'''
     y = list(np.zeros(1000))
-    librosa.util.valid_audio(y)
+    minispec.util.valid_audio(y)
 
 
-@pytest.mark.xfail(raises=librosa.ParameterError)
+@pytest.mark.xfail(raises=minispec.ParameterError)
 def test_valid_audio_nan():
     '''valid_audio: NaN'''
     y = np.zeros(1000)
     y[10] = np.NaN
-    librosa.util.valid_audio(y)
+    minispec.util.valid_audio(y)
 
 
-@pytest.mark.xfail(raises=librosa.ParameterError)
+@pytest.mark.xfail(raises=minispec.ParameterError)
 def test_valid_audio_inf():
     '''valid_audio: Inf'''
     y = np.zeros(1000)
     y[10] = np.inf
-    librosa.util.valid_audio(y)
+    minispec.util.valid_audio(y)
 
 
 def test_valid_audio_ndim():
@@ -79,51 +79,51 @@ def test_valid_audio_ndim():
 
     y = np.zeros((3, 10, 10))
 
-    @pytest.mark.xfail(raises=librosa.ParameterError)
+    @pytest.mark.xfail(raises=minispec.ParameterError)
     def __test(mono):
-        librosa.util.valid_audio(y, mono=mono)
+        minispec.util.valid_audio(y, mono=mono)
 
     for mono in [False, True]:
         yield __test, mono
 
 
-@pytest.mark.xfail(raises=librosa.ParameterError)
+@pytest.mark.xfail(raises=minispec.ParameterError)
 def test_frame_hop():
     '''frame: hop_length=0'''
     y = np.zeros(128)
-    librosa.util.frame(y, frame_length=10, hop_length=0)
+    minispec.util.frame(y, frame_length=10, hop_length=0)
 
 
-@pytest.mark.xfail(raises=librosa.ParameterError)
+@pytest.mark.xfail(raises=minispec.ParameterError)
 def test_frame_discontiguous():
     '''frame: discontiguous input'''
     y = np.zeros((128, 2)).T
-    librosa.util.frame(y[0], frame_length=64, hop_length=64)
+    minispec.util.frame(y[0], frame_length=64, hop_length=64)
 
 
 def test_frame_contiguous():
     '''frame: discontiguous input'''
     y = np.zeros((2, 128))
-    librosa.util.frame(y[0], frame_length=64, hop_length=64)
+    minispec.util.frame(y[0], frame_length=64, hop_length=64)
 
 
-@pytest.mark.xfail(raises=librosa.ParameterError)
+@pytest.mark.xfail(raises=minispec.ParameterError)
 def test_frame_size():
     # frame: len(y) == 128, frame_length==256, hop_length=128
     y = np.zeros(64)
-    librosa.util.frame(y, frame_length=256, hop_length=128)
+    minispec.util.frame(y, frame_length=256, hop_length=128)
 
 
-@pytest.mark.xfail(raises=librosa.ParameterError)
+@pytest.mark.xfail(raises=minispec.ParameterError)
 def test_frame_size_difference():
     # In response to issue #385
-    # https://github.com/librosa/librosa/issues/385
+    # https://github.com/minispec/minispec/issues/385
     # frame: len(y) == 129, frame_length==256, hop_length=128
     y = np.zeros(129)
-    librosa.util.frame(y, frame_length=256, hop_length=128)
+    minispec.util.frame(y, frame_length=256, hop_length=128)
 
 
-@pytest.mark.xfail(raises=librosa.ParameterError)
+@pytest.mark.xfail(raises=minispec.ParameterError)
 def test_stft_bad_window():
 
     y = np.zeros(22050 * 5)
@@ -131,10 +131,10 @@ def test_stft_bad_window():
     n_fft = 2048
     window = np.ones(n_fft // 2)
 
-    librosa.stft(y, n_fft=n_fft, window=window)
+    minispec.stft(y, n_fft=n_fft, window=window)
 
 
-@pytest.mark.xfail(raises=librosa.ParameterError)
+@pytest.mark.xfail(raises=minispec.ParameterError)
 def test_istft_bad_window():
 
     D = np.zeros((1025, 10), dtype=np.complex64)
@@ -143,4 +143,4 @@ def test_istft_bad_window():
 
     window = np.ones(n_fft // 2)
 
-    librosa.istft(D, window=window)
+    minispec.istft(D, window=window)
