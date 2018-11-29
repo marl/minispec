@@ -5,8 +5,8 @@
 import sys
 import importlib
 
-short_version = '0.6'
-version = '0.6.2'
+short_version = '0.1'
+version = '0.1.0rc'
 
 
 def __get_mod_version(modname):
@@ -28,15 +28,9 @@ def __get_mod_version(modname):
 def show_versions():
     '''Return the version information for all minispec dependencies.'''
 
-    core_deps = ['audioread',
-                 'numpy',
+    core_deps = ['numpy',
                  'scipy',
-                 'sklearn',
-                 'joblib',
-                 'decorator',
-                 'six',
-                 'resampy',
-                 'numba']
+                 'six']
 
     extra_deps = ['numpydoc',
                   'sphinx',
@@ -46,7 +40,8 @@ def show_versions():
                   'pytest',
                   'pytest-mpl',
                   'pytest-cov',
-                  'matplotlib']
+                  'audioread',
+                  'resampy']
 
     print('INSTALLED VERSIONS')
     print('------------------')

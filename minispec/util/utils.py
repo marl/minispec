@@ -12,9 +12,7 @@ MAX_MEM_BLOCK = 2**8 * 2**10
 
 __all__ = ['MAX_MEM_BLOCK',
            'frame', 'pad_center', 'fix_length',
-           'valid_audio', 'fix_frames', 'normalize',
-           'index_to_slice',
-           'buf_to_float',
+           'valid_audio', 'normalize',
            'tiny']
 
 

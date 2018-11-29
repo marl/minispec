@@ -52,8 +52,7 @@ from .util.exceptions import ParameterError
 
 from .core.time_frequency import fft_frequencies, mel_frequencies
 
-__all__ = [
-           'mel',
+__all__ = ['mel',
            'get_window',
            'window_sumsquare']
 
