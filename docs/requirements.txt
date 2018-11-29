@@ -1,5 +1,5 @@
 numpydoc
 numpy
+matplotlib
 sphinx_rtd_theme
 sphinxcontrib-versioning >= 2.2.1
-distutils
