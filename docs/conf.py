@@ -207,7 +207,7 @@ class Mock(MagicMock):
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 if on_rtd:
     html_theme = 'default'
-    MOCK_MODULES = ['argparse', 'numpy', 'scipy', 'scipy.fftpack', 'scipy.signal', 'numpy.lib.stride_tricks']
+    MOCK_MODULES = ['argparse', 'numpy', 'scipy', 'scipy.fftpack', 'scipy.signal', 'numpy.lib', 'numpy.lib.stride_tricks']
     sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
 else:
     import sphinx_rtd_theme
