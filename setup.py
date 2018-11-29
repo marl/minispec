@@ -19,7 +19,7 @@ setup(
     name='minispec',
     version=version.version,
     description='Minimal module for computing audio spectrograms',
-    author='Jason Cramer, Ho-Hsiang Wu, Justin Salamon, Mark Cartwright, and Brian McFee',
+    author='Jason Cramer, Ho-Hsiang Wu, Justin Salamon, and Mark Cartwright',
     author_email='jtcramer@nyu.edu',
     url='http://github.com/marl/minispec',
     download_url='http://github.com/marl/minispec/releases',

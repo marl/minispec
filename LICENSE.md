@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2018 Jason Cramer, Ho-Hsiang Wu, Justin Salamon, Mark Cartwright, and Brian McFee
+Copyright (c) 2018 Jason Cramer, Ho-Hsiang Wu, Justin Salamon, and Mark Cartwright
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
