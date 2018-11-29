@@ -42,23 +42,6 @@ extensions = ['sphinx.ext.autodoc',
 
 autosummary_generate = True 
 
-# Determine if the matplotlib has a recent enough version of the
-# plot_directive.
-try:
-    from matplotlib.sphinxext import plot_directive
-except ImportError:
-    use_matplotlib_plot_directive = False
-else:
-    try:
-        use_matplotlib_plot_directive = (plot_directive.__version__ >= 2)
-    except AttributeError:
-        use_matplotlib_plot_directive = False
-
-if use_matplotlib_plot_directive:
-    extensions.append('matplotlib.sphinxext.plot_directive')
-else:
-    raise RuntimeError("You need a recent enough version of matplotlib")
-
 # Galley
 sphinx_gallery_conf = {
         'examples_dirs': 'examples/',
@@ -69,14 +52,11 @@ sphinx_gallery_conf = {
             'numpy': 'http://docs.scipy.org/doc/numpy/',
             'np': 'http://docs.scipy.org/doc/numpy/',
             'scipy': 'http://docs.scipy.org/doc/scipy/reference',
-            'matplotlib': 'http://matplotlib.org/',
-            'sklearn': 'http://scikit-learn.org/stable',
-            'resampy': 'https://resampy.readthedocs.io/en/latest/',
         }
     }
 
 # Generate plots for example sections
-numpydoc_use_plots = True
+numpydoc_use_plots = False
 
 
 #--------
@@ -127,22 +107,12 @@ plot_rcparams = {
                        'Fixed', 'Terminal', 'monospace'],
 }
 
-if not use_matplotlib_plot_directive:
-    import matplotlib
-    matplotlib.rcParams.update(plot_rcparams)
-
-
 numpydoc_show_class_members = False
 
 intersphinx_mapping = {'python': ('https://docs.python.org/3', None),
                        'numpy': ('https://docs.scipy.org/doc/numpy/', None),
                        'np': ('https://docs.scipy.org/doc/numpy/', None),
-                       'scipy': ('https://docs.scipy.org/doc/scipy/reference/', None),
-                       'matplotlib': ('http://matplotlib.org/', None),
-                       'sklearn': ('http://scikit-learn.org/stable/', None),
-                       'resampy': ('http://resampy.readthedocs.io/en/latest/', None),
-                       'soundfile': ('https://pysoundfile.readthedocs.io/en/latest', None),
-                       'minispec_gallery': ('https://minispec.github.io/minispec_gallery/', None)}
+                       'scipy': ('https://docs.scipy.org/doc/scipy/reference/', None)}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
