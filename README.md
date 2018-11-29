@@ -52,4 +52,4 @@ Citing
 - If you wish to cite minispec for its design, motivation etc., please cite the librosa paper
   published at SciPy 2015:
 
-    McFee, Brian, Colin Raffel, Dawen Liang, Daniel PW Ellis, Matt McVicar, Eric Battenberg, and Oriol Nieto. "minispec: Audio and music signal analysis in python." In Proceedings of the 14th python in science conference, pp. 18-25. 2015.
+    McFee, Brian, Colin Raffel, Dawen Liang, Daniel PW Ellis, Matt McVicar, Eric Battenberg, and Oriol Nieto. "librosa: Audio and music signal analysis in python." In Proceedings of the 14th python in science conference, pp. 18-25. 2015.
