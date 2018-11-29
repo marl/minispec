@@ -49,14 +49,11 @@ setup(
     ],
     extras_require={
         'docs': ['numpydoc', 'sphinx!=1.3.1', 'sphinx_rtd_theme',
-                 'sphinxcontrib-versioning >= 2.2.1',
-                 'sphinx-gallery'],
-        'tests': ['matplotlib >= 2.1',
-                  'resampy >= 0.2.0',
+                 'sphinxcontrib-versioning >= 2.2.1'],
+        'tests': ['resampy >= 0.2.0',
                   'audioread >= 2.0.0',
                   'pytest-mpl',
                   'pytest-cov',
-                  'pytest < 4'],
-        'display': ['matplotlib >= 1.5'],
+                  'pytest < 4']
     }
 )

@@ -36,7 +36,6 @@ def show_versions():
                   'sphinx',
                   'sphinx_rtd_theme',
                   'sphinxcontrib.versioning',
-                  'sphinx-gallery',
                   'pytest',
                   'pytest-mpl',
                   'pytest-cov',

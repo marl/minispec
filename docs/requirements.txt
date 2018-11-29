@@ -2,4 +2,4 @@ numpydoc
 numpy
 sphinx_rtd_theme
 sphinxcontrib-versioning >= 2.2.1
-sphinx-gallery
+distutils
