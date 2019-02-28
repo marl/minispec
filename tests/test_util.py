@@ -5,7 +5,7 @@
 # Disable cache
 import os
 try:
-    os.environ.pop('minispec_CACHE_DIR')
+    os.environ.pop('MINISPEC_CACHE_DIR')
 except:
     pass
 

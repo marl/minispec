@@ -39,12 +39,15 @@ setup(
         "Programming Language :: Python :: 3.4",
         "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
     ],
     keywords='audio music sound',
     license='ISC',
     install_requires=[
         'numpy >= 1.8.0',
-        'scipy >= 0.14.0',
+        'scipy >= 1.0.0',
+        'joblib >= 0.12',
+        'decorator >= 3.0.0',
         'six >= 1.3',
     ],
     extras_require={

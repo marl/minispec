@@ -8,6 +8,7 @@ from .version import version as __version__
 from .version import show_versions
 
 # And all the minispec sub-modules
+from ._cache import cache
 from . import core
 from . import feature
 from . import filters

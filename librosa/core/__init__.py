@@ -12,6 +12,9 @@ Spectral representations
     stft
     istft
 
+    get_fftlib
+    set_fftlib
+
 Magnitude scaling
 -----------------
 .. autosummary::
@@ -43,5 +46,19 @@ Time and frequency conversion
 
 from .time_frequency import *  # pylint: disable=wildcard-import
 from .spectrum import *  # pylint: disable=wildcard-import
+<<<<<<< HEAD
+=======
+from .pitch import *  # pylint: disable=wildcard-import
+from .constantq import *  # pylint: disable=wildcard-import
+from .harmonic import *  # pylint: disable=wildcard-import
+from .fft import *  # pylint: disable=wildcard-import
+
+from ..util.decorators import moved as _moved
+from ..util import fill_off_diagonal as _fod
+from ..sequence import dtw as _dtw
+
+dtw = _moved('librosa.sequence.dtw', '0.6.1', '0.7')(_dtw)
+fill_off_diagonal = _moved('librosa.util.fill_off_diagonal', '0.6.1', '0.7')(_fod)
+>>>>>>> acd4e6fbd5b3b361e8c2e89797cfe3eb0b1a3aba
 
 __all__ = [_ for _ in dir() if not _.startswith('_')]

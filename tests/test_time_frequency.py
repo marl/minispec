@@ -4,7 +4,7 @@
 '''Unit tests for time and frequency conversion'''
 import os
 try:
-    os.environ.pop('minispec_CACHE_DIR')
+    os.environ.pop('MINISPEC_CACHE_DIR')
 except KeyError:
     pass
 
