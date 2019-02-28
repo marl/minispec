@@ -9,7 +9,7 @@ __all__ = ['get_fftlib', 'set_fftlib']
 __FFTLIB = None
 
 def set_fftlib(lib=None):
-    '''Set the FFT library used by librosa.
+    '''Set the FFT library used by minispec.
 
     Parameters
     ----------
@@ -22,11 +22,11 @@ def set_fftlib(lib=None):
     Use `pyfftw`:
 
     >>> import pyfftw
-    >>> librosa.set_fftlib(pyfftw.interfaces.numpy_fft)
+    >>> minispec.set_fftlib(pyfftw.interfaces.numpy_fft)
 
     Reset to default `numpy` implementation
 
-    >>> librosa.set_fftlib()
+    >>> minispec.set_fftlib()
 
     '''
 
@@ -39,12 +39,12 @@ def set_fftlib(lib=None):
 
 
 def get_fftlib():
-    '''Get the FFT library currently used by librosa
+    '''Get the FFT library currently used by minispec
 
     Returns
     -------
     fft : module
-        The FFT library currently used by librosa.
+        The FFT library currently used by minispec.
         Must API-compatible with `numpy.fft`.
     '''
     global __FFTLIB

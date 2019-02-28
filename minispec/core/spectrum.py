@@ -5,9 +5,6 @@ import warnings
 
 import numpy as np
 import scipy
-import scipy.ndimage
-import scipy.signal
-import scipy.interpolate
 import six
 
 from . import time_frequency
@@ -328,7 +325,7 @@ def istft(stft_matrix, hop_length=None, win_length=None, window='hann',
 
 
 def __overlap_add(y, ytmp, hop_length):
-    # numba-accelerated overlap add for inverse stft
+    # overlap add for inverse stft
     # y is the pre-allocated output buffer
     # ytmp is the windowed inverse-stft frames
     # hop_length is the hop-length of the STFT analysis

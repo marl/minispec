@@ -7,7 +7,7 @@ from joblib import Memory
 
 
 class CacheManager(object):
-    '''The librosa cache manager class wraps joblib.Memory
+    '''The minispec cache manager class wraps joblib.Memory
     with a __call__ attribute, so that it may act as a function.
 
     Additionally, it provides a caching level filter, so that
@@ -74,8 +74,8 @@ class CacheManager(object):
 
 
 # Instantiate the cache from the environment
-cache = CacheManager(os.environ.get('LIBROSA_CACHE_DIR', None),
-                     mmap_mode=os.environ.get('LIBROSA_CACHE_MMAP', None),
-                     compress=os.environ.get('LIBROSA_CACHE_COMPRESS', False),
-                     verbose=int(os.environ.get('LIBROSA_CACHE_VERBOSE', 0)),
-                     level=int(os.environ.get('LIBROSA_CACHE_LEVEL', 10)))
+cache = CacheManager(os.environ.get('MINISPEC_CACHE_DIR', None),
+                     mmap_mode=os.environ.get('MINISPEC_CACHE_MMAP', None),
+                     compress=os.environ.get('MINISPEC_CACHE_COMPRESS', False),
+                     verbose=int(os.environ.get('MINISPEC_CACHE_VERBOSE', 0)),
+                     level=int(os.environ.get('MINISPEC_CACHE_LEVEL', 10)))
